@@ -40,7 +40,8 @@ df_closed_grouped = df_closed_grouped.sort_values(by='Sale Index')
 
 # Create a horizontal bar chart
 plt.figure(figsize=(10,10))
-plt.barh(df_closed_grouped['sales_team__c'], df_closed_grouped['Sale Index'])
+#plt.barh(df_closed_grouped['sales_team__c'], df_closed_grouped['Sale Index'])
+plt.barh(df_closed_grouped['sales_team__c'], df_closed_grouped['Sale Index'], color=colors)
 plt.title('Sale Index by Sales Team')
 plt.xlabel('Sale Index')
 plt.ylabel('Sales Team')
