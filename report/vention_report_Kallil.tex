@@ -2,9 +2,13 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{xcolor}
 \usepackage{graphicx}
+\usepackage{subcaption}
+
+
+%\usepackage[margin=2cm,footskip=0.25in]{geometry}
 
 \renewcommand{\thefigure}{\arabic{figure}}
-
+\setlength{\parskip}{6pt}
 % Title Page
 \title{Vention Data Analysis Report}
 \author{Kallil de Araujo Bezerra}
@@ -75,36 +79,53 @@ To better evaluate this, it was created a \textit{Sales Index}, which can be cal
 	\label{fig:fig_02}
 \end{figure}
 
-From figure \textcolor{blue}{\ref{fig:fig_02}} it is possible to see that some teams have a high value or even a perfect score. However, those teams have a low number of sales, therefore there is a high chance that when they start to grown their sales number, the \textit{Sales Index} will drop. At the same time, the top team is \textit{Strategic Sales}, with a total of 266 sales and a great 66\% Sales Index, or success rate.
+The color change according to the Sales Index, if it is higher than 0.51 it will be blue, between 0.4 and 0.5 (inclusive) it will be orange, less than 0.4 is red.
 
-With that said, we can explore which are the top 5 products of each team.
+From figure \textcolor{blue}{\ref{fig:fig_02}} it is possible to see that some teams have a high value or even a perfect score. However, those teams have a low number of sales, therefore there is a high chance that when they start to grown their sales number, the \textit{Sales Index} will drop. At the same time, the top team is \textit{Strategic Sales}, with a total of 266 sales and a great 66\% Sales Index, or success rate. Knowing which teams are the most successful may help other teams to identify best practices and areas for improvement.
 
-\subsection{Most sold products by Sales Team}
-
-The pie charts shown in figures \textcolor{blue}{\ref{fig:fig_03a}}, \textcolor{blue}{\ref{fig:fig_03b}}, and \textcolor{blue}{\ref{fig:fig_03c}} show which products are more relevant to each of the top 3 teams (Strategic Sales, HVS 1, and HVS 3). The \textit{Other Products} are the ones that are not in the top 5, however, it is important to keep them in the visualization so we can see their impact in each team.
+Finally, it is important to show that the teams that are closing more sales are also doing it quick, as can be seen in figure \textcolor{blue}{\ref{fig:fig_02a}}. 
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=0.70\textwidth]{fig_03_strategic_sales}
+	\includegraphics[width=0.55\textwidth]{fig_02_a_days_to_win}
+	\caption{Days to close a sale.}
+	\label{fig:fig_02a}
+\end{figure}
+
+The Strategic Sales and HVS 1 are closing sales in less than two weeks, while the HVS 3 team is spending a little over 16 days.
+
+
+\subsection{Most sold products by Sales Team}
+
+The next analysis will be more focused on a few teams, the objective is to understand what they sell more and how many days they spend between discovering an opportunity and closing a deal.
+
+The pie charts shown in figures \textcolor{blue}{\ref{fig:fig_03a}}, \textcolor{blue}{\ref{fig:fig_03b}}, and \textcolor{blue}{\ref{fig:fig_03c}} present which products are more relevant to each of the top 3 teams (Strategic Sales, HVS 1, and HVS 3). The \textit{Other Products} are the ones that are not in the top 5, however, it is important to keep them in the visualization so we can see their impact in each team.
+
+From the pie charts it is possible to see that those teams are specialized in different areas. Strategic Sales is strong with Robot Pedestals and Bases, HVS 1 is divided between Safety Enclosures and Workstations, and HVS 3 is experienced with Robot Range Extender. However, all three have at least 10\% of sales related to Workstations, therefore, this area is important for all teams.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.85\textwidth]{fig_03_strategic_sales}
 	\caption{Products sold by Strategic Sales}
 	\label{fig:fig_03a}
 \end{figure}
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=0.70\textwidth]{fig_03_hvs_1}
+	\includegraphics[width=0.85\textwidth]{fig_03_hvs_1}
 	\caption{Products sold by HVS 1}
 	\label{fig:fig_03b}
 \end{figure}
 
-\begin{figure}[htb]
+\begin{figure}[!t]
 	\centering
-	\includegraphics[width=0.80\textwidth]{fig_03_hvs_3}
+	\includegraphics[width=1\textwidth]{fig_03_hvs_3}
 	\caption{Products sold by HVS 3}
 	\label{fig:fig_03c}
 \end{figure}
 
-\newpage
+
+\clearpage
 \section{Strategic Sales Team}
 
 In this section the Strategic Sales Team will be better analyzed, so we can understand who are the owners of the opportunities and how many sales they did. 
@@ -116,11 +137,12 @@ In this section the Strategic Sales Team will be better analyzed, so we can unde
 	\label{fig:fig_04}
 \end{figure}
 
-In figure \ref{fig:fig_04} it is shown the total Closed Won and Closed Lost sales by each of the sellers in the Strategic Sales team, most of them present a good Sales Index. However the seller \textit{0054v00000E7EDFAA3} seems to lose more customers than win new ones. 
+In figure \ref{fig:fig_04} it is shown the total Closed Won and Closed Lost sales by each of the sellers in the Strategic Sales team, most of them present a good Sales Index. However the seller \textit{0054v00000E7EDFAA3} seems to lose more customers than win new ones. Therefore, it is important to further investigate why this is happening and find a solution.
 
 
 \chapter{SQL query}
 
 \chapter{Technical details}
+
 
 \end{document}          

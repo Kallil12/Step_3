@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.10)  11 MAR 2023 14:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.10)  11 MAR 2023 15:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -232,33 +232,60 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 \Gin@req@height=\dimen145
 \Gin@req@width=\dimen146
 )
+(C:\Users\Alphabyte\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.
+sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+
+(C:\Users\Alphabyte\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(C:\Users\Alphabyte\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.st
+y
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen147
+\captionmargin=\dimen148
+\caption@leftmargin=\dimen149
+\caption@rightmargin=\dimen150
+\caption@width=\dimen151
+\caption@indent=\dimen152
+\caption@parindent=\dimen153
+\caption@hangindent=\dimen154
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count271
+\c@continuedfloat=\count272
+Package caption Info: hyperref package is loaded.
+)
+\c@subfigure=\count273
+\c@subtable=\count274
+)
 (C:\Users\Alphabyte\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend
 -pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count271
+\l__color_backend_stack_int=\count275
 \l__pdf_internal_box=\box51
 ) (vention_report_Kallil.aux)
 \openout1 = `vention_report_Kallil.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-Package hyperref Info: Link coloring OFF on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+Package hyperref Info: Link coloring OFF on input line 17.
  (vention_report_Kallil.out)
 (vention_report_Kallil.out)
 \@outlinefile=\write3
@@ -268,16 +295,16 @@ Package hyperref Info: Link coloring OFF on input line 13.
 (C:\Users\Alphabyte\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pd
 f.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count272
-\scratchdimen=\dimen147
+\scratchcounter=\count276
+\scratchdimen=\dimen155
 \scratchbox=\box52
-\nofMPsegments=\count273
-\nofMParguments=\count274
+\nofMPsegments=\count277
+\nofMParguments=\count278
 \everyMPshowfont=\toks17
-\MPscratchCnt=\count275
-\MPscratchDim=\dimen148
-\MPnumerator=\count276
-\makeMPintoPDFobject=\count277
+\MPscratchCnt=\count279
+\MPscratchDim=\dimen156
+\MPnumerator=\count280
+\makeMPintoPDFobject=\count281
 \everyMPtoPDFconversion=\toks18
 )
 (C:\Users\Alphabyte\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstop
@@ -290,12 +317,14 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 ys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 15.
+(Font)              <12> on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 15.
+(Font)              <8> on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 15.
+(Font)              <6> on input line 19.
  [1
 
 {C:/Users/Alphabyte/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (vention
@@ -313,7 +342,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19 \chapter
+l.23 \chapter
              {Visualization} [1
 
 ]
@@ -324,56 +353,65 @@ Chapter 1.
 <fig_01_closed_won.png, id=53, 894.34125pt x 693.59125pt>
 File: fig_01_closed_won.png Graphic file (type png)
 <use fig_01_closed_won.png>
-Package pdftex.def Info: fig_01_closed_won.png  used on input line 56.
+Package pdftex.def Info: fig_01_closed_won.png  used on input line 60.
 (pdftex.def)             Requested size: 345.0pt x 267.55733pt.
  [3 <./fig_01_closed_won.png>]
 <fig_02_sales_index.png, id=62, 700.6175pt x 606.265pt>
 File: fig_02_sales_index.png Graphic file (type png)
 <use fig_02_sales_index.png>
-Package pdftex.def Info: fig_02_sales_index.png  used on input line 73.
+Package pdftex.def Info: fig_02_sales_index.png  used on input line 77.
 (pdftex.def)             Requested size: 345.0pt x 298.54333pt.
-<fig_03_strategic_sales.png, id=67, 374.39874pt x 247.92625pt>
+ [4 <./fig_02_sales_index.png>]
+<fig_02_a_days_to_win.png, id=73, 235.63031pt x 161.85469pt>
+File: fig_02_a_days_to_win.png Graphic file (type png)
+<use fig_02_a_days_to_win.png>
+Package pdftex.def Info: fig_02_a_days_to_win.png  used on input line 90.
+(pdftex.def)             Requested size: 189.75105pt x 130.3409pt.
+<fig_03_strategic_sales.png, id=77, 374.39874pt x 247.92625pt>
 File: fig_03_strategic_sales.png Graphic file (type png)
 <use fig_03_strategic_sales.png>
-Package pdftex.def Info: fig_03_strategic_sales.png  used on input line 88.
-(pdftex.def)             Requested size: 241.49895pt x 159.92065pt.
- [4 <./fig_02_sales_index.png>]
-<fig_03_hvs_1.png, id=79, 371.3875pt x 247.92625pt>
+Package pdftex.def Info: fig_03_strategic_sales.png  used on input line 108.
+(pdftex.def)             Requested size: 293.2521pt x 194.2026pt.
+<fig_03_hvs_1.png, id=78, 371.3875pt x 247.92625pt>
 File: fig_03_hvs_1.png Graphic file (type png)
 <use fig_03_hvs_1.png>
-Package pdftex.def Info: fig_03_hvs_1.png  used on input line 95.
-(pdftex.def)             Requested size: 241.49895pt x 161.21825pt.
-<fig_03_hvs_3.png, id=80, 444.66125pt x 247.92625pt>
+Package pdftex.def Info: fig_03_hvs_1.png  used on input line 115.
+(pdftex.def)             Requested size: 293.2521pt x 195.7688pt.
+<fig_03_hvs_3.png, id=79, 444.66125pt x 247.92625pt>
 File: fig_03_hvs_3.png Graphic file (type png)
 <use fig_03_hvs_3.png>
-Package pdftex.def Info: fig_03_hvs_3.png  used on input line 102.
-(pdftex.def)             Requested size: 276.00105pt x 153.8867pt.
- [5 <./fig_03_strategic_sales.png> <./fig_03_hvs_1.png>]
-<fig_04_sellers.png, id=87, 347.79938pt x 140.02313pt>
+Package pdftex.def Info: fig_03_hvs_3.png  used on input line 122.
+(pdftex.def)             Requested size: 345.0pt x 192.36028pt.
+ [5 <./fig_02_a_days_to_win.png>] [6 <./fig_03_strategic_sales.png> <./fig_03_h
+vs_1.png>]
+[7 <./fig_03_hvs_3.png>]
+<fig_04_sellers.png, id=101, 347.79938pt x 140.02313pt>
 File: fig_04_sellers.png Graphic file (type png)
 <use fig_04_sellers.png>
-Package pdftex.def Info: fig_04_sellers.png  used on input line 114.
+Package pdftex.def Info: fig_04_sellers.png  used on input line 135.
 (pdftex.def)             Requested size: 241.49895pt x 97.22711pt.
- [6 <./fig_03_hvs_3.png> <./fig_04_sellers.png>]
+ [8
+
+ <./fig_04_sellers.png>]
 Chapter 2.
-[7
+[9
 
 ]
 Chapter 3.
-[8
+[10
 
 ] (vention_report_Kallil.aux)
 Package rerunfilecheck Info: File `vention_report_Kallil.out' has not changed.
 (rerunfilecheck)             Checksum: 9CF65DB8F3F4BFB3864B5160E33846F1;914.
  ) 
 Here is how much of TeX's memory you used:
- 8712 strings out of 476374
- 139758 string characters out of 5786966
+ 10112 strings out of 476374
+ 167423 string characters out of 5786966
  1856340 words of memory out of 5000000
- 28993 multiletter control sequences out of 15000+600000
+ 30381 multiletter control sequences out of 15000+600000
  518435 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,76p,477b,496s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,77p,596b,496s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Alphabyte\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
 tcrm1000.pk><C:/Users/Alphabyte/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmbx10.pfb><C:/Users/Alphabyte/AppData/Local/Programs/MiKTeX/font
@@ -384,9 +422,9 @@ yte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/
 Users/Alphabyte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
 r17.pfb><C:/Users/Alphabyte/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmti10.pfb>
-Output written on vention_report_Kallil.pdf (9 pages, 215211 bytes).
+Output written on vention_report_Kallil.pdf (11 pages, 225818 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
- 79 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 159 PDF objects out of 1000 (max. 8388607)
+ 26 named destinations out of 1000 (max. 500000)
+ 84 words of extra memory for PDF output out of 10000 (max. 10000000)
 

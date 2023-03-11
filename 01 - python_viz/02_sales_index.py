@@ -16,6 +16,15 @@ losses in the way, but it is good to be closer to 1.
 
 #df = pd.read_csv('/content/sample_data/SalesForce.csv')
 
+colors = []
+for value in df_closed_grouped['Sale Index']:
+    if value < 0.4:
+        colors.append('red')
+    elif value >= 0.4 and value <= 0.5:
+        colors.append('orange')
+    else:
+        colors.append('blue')
+
 df_closed = df[df['stagename'].isin(['Closed Won', 'Closed Lost'])]
 
 # Calculate the number of Closed Won and Closed Lost opportunities by sales team
