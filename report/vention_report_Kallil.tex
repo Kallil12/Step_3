@@ -1,6 +1,9 @@
 \documentclass[]{report}
 \usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
 
+\renewcommand{\thefigure}{\arabic{figure}}
 
 % Title Page
 \title{Vention Data Analysis Report}
@@ -18,18 +21,52 @@
 The data was received in a \textit{.csv} file, and it contains the following columns:
 
 \begin{itemize}
-	\item \textit{accountid} - customer account id
-	\item \textit{amount} - amount of bought products
-	\item \textit{closedate} - date in which the deal was closed
-	\item \textit{opportunityid} - lead id
-	\item \textit{opportunity\_creation\_date\_\_c} - date in which the first contact with the customer was made
-	\item \textit{ownerid} - seller id (the \textit{owner} of the opportunity)
-	\item \textit{primary\_application\_\_c} - primary application of the product that is being sold
-	\item \textit{stagename} - in which stage the sale is categorized
-	\item \textit{sales\_team\_\_c} - to which sales team the opportunity, seller, and customer belongs
+	\item \textcolor{blue}{\textit{accountid}} - customer account id
+	\item \textcolor{blue}{\textit{amount}} - amount of bought products
+	\item \textcolor{blue}{\textit{closedate}} - date in which the deal was closed
+	\item \textcolor{blue}{\textit{opportunityid}} - the id of a possible sales lead
+	\item \textcolor{blue}{\textit{opportunity\_creation\_date\_\_c}} - date in which the first contact with a customer was made
+	\item \textcolor{blue}{\textit{ownerid}} - seller id (the \textit{owner} of the opportunity)
+	\item \textcolor{blue}{\textit{primary\_application\_\_c}} - primary application of the product that is being sold
+	\item \textcolor{blue}{\textit{stagename}} - in which stage the sale is categorized
+	\item \textcolor{blue}{\textit{sales\_team\_\_c}} - to which sales team the opportunity, seller, and customer belongs
 \end{itemize}
 
 The description of the columns are based solely on the name of the columns itself. In an ideal environment I would get a more accurate definition of each one by asking the person that sent me the file a description of each column, and proceed with the analysis to avoid mistakes and misinterpretations.
+
+\section{Closed Won - Success sales by sales team}
+
+Under the column \textit{stagename} it is possible to see 8 different values, they are:
+
+\begin{itemize}
+	\item Closed Lost
+	\item Closed Won
+	\item Prospect
+	\item Project Discovery
+	\item Closing Stage
+	\item Project Quoted
+	\item Design Review
+	\item Awaiting Purchase
+\end{itemize}
+
+To create a chart that shows which sales had a positive result it was considered the registers that have the value \textit{Closed Won}.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=1\textwidth]{fig_01_closed_won}
+	\caption{Closed Won versus Sales Team.}
+	\label{fig:fig_01}
+\end{figure}
+
+As we can see in figure \textcolor{blue}{\ref{fig:fig_01}} the team with most sales is the \textit{Strategic Sales team}, with 266 closed sales won, followed by \textit{HVS 3} and \textit{HVS 1}, with 248 and 216 sales respectively. From now on the analysis will focus on them.
+
+However, it is also important to see the success rate of each team. Even if a team wins many sales, it doesn't mean that it is the most successful because it may be losing many sales too.
+
+To better evaluate this, it was created a \textit{Sales Index}, which can be calculated using the following formula:
+
+\begin{equation}
+	Sales\:Index = \frac{\#\:Closed\:Won}{\#\:Closed\:Won + \#\:Closed\:Lost}
+\end{equation}
 
 \chapter{SQL query}
 
