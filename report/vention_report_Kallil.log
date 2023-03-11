@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.10)  11 MAR 2023 11:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.10)  11 MAR 2023 14:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -321,31 +321,59 @@ Chapter 1.
 [2
 
 ]
-<fig_01_closed_won.png, id=43, 894.34125pt x 693.59125pt>
+<fig_01_closed_won.png, id=53, 894.34125pt x 693.59125pt>
 File: fig_01_closed_won.png Graphic file (type png)
 <use fig_01_closed_won.png>
 Package pdftex.def Info: fig_01_closed_won.png  used on input line 56.
 (pdftex.def)             Requested size: 345.0pt x 267.55733pt.
- [3 <./fig_01_closed_won.png>] [4]
+ [3 <./fig_01_closed_won.png>]
+<fig_02_sales_index.png, id=62, 700.6175pt x 606.265pt>
+File: fig_02_sales_index.png Graphic file (type png)
+<use fig_02_sales_index.png>
+Package pdftex.def Info: fig_02_sales_index.png  used on input line 73.
+(pdftex.def)             Requested size: 345.0pt x 298.54333pt.
+<fig_03_strategic_sales.png, id=67, 374.39874pt x 247.92625pt>
+File: fig_03_strategic_sales.png Graphic file (type png)
+<use fig_03_strategic_sales.png>
+Package pdftex.def Info: fig_03_strategic_sales.png  used on input line 88.
+(pdftex.def)             Requested size: 241.49895pt x 159.92065pt.
+ [4 <./fig_02_sales_index.png>]
+<fig_03_hvs_1.png, id=79, 371.3875pt x 247.92625pt>
+File: fig_03_hvs_1.png Graphic file (type png)
+<use fig_03_hvs_1.png>
+Package pdftex.def Info: fig_03_hvs_1.png  used on input line 95.
+(pdftex.def)             Requested size: 241.49895pt x 161.21825pt.
+<fig_03_hvs_3.png, id=80, 444.66125pt x 247.92625pt>
+File: fig_03_hvs_3.png Graphic file (type png)
+<use fig_03_hvs_3.png>
+Package pdftex.def Info: fig_03_hvs_3.png  used on input line 102.
+(pdftex.def)             Requested size: 276.00105pt x 153.8867pt.
+ [5 <./fig_03_strategic_sales.png> <./fig_03_hvs_1.png>]
+<fig_04_sellers.png, id=87, 347.79938pt x 140.02313pt>
+File: fig_04_sellers.png Graphic file (type png)
+<use fig_04_sellers.png>
+Package pdftex.def Info: fig_04_sellers.png  used on input line 114.
+(pdftex.def)             Requested size: 241.49895pt x 97.22711pt.
+ [6 <./fig_03_hvs_3.png> <./fig_04_sellers.png>]
 Chapter 2.
-[5
+[7
 
 ]
 Chapter 3.
-[6
+[8
 
 ] (vention_report_Kallil.aux)
 Package rerunfilecheck Info: File `vention_report_Kallil.out' has not changed.
-(rerunfilecheck)             Checksum: A4FCBD247D7C336824E5354548EB22E8;605.
+(rerunfilecheck)             Checksum: 9CF65DB8F3F4BFB3864B5160E33846F1;914.
  ) 
 Here is how much of TeX's memory you used:
- 8645 strings out of 476374
- 138325 string characters out of 5786966
+ 8712 strings out of 476374
+ 139758 string characters out of 5786966
  1856340 words of memory out of 5000000
- 28935 multiletter control sequences out of 15000+600000
- 518128 words of font info for 51 fonts, out of 8000000 for 9000
+ 28993 multiletter control sequences out of 15000+600000
+ 518435 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,76p,351b,496s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,76p,477b,496s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Alphabyte\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
 tcrm1000.pk><C:/Users/Alphabyte/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmbx10.pfb><C:/Users/Alphabyte/AppData/Local/Programs/MiKTeX/font
@@ -356,9 +384,9 @@ yte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/
 Users/Alphabyte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
 r17.pfb><C:/Users/Alphabyte/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmti10.pfb>
-Output written on vention_report_Kallil.pdf (7 pages, 139218 bytes).
+Output written on vention_report_Kallil.pdf (9 pages, 215211 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 14 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 PDF objects out of 1000 (max. 8388607)
+ 23 named destinations out of 1000 (max. 500000)
+ 79 words of extra memory for PDF output out of 10000 (max. 10000000)
 

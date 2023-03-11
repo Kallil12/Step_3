@@ -34,7 +34,7 @@ The data was received in a \textit{.csv} file, and it contains the following col
 
 The description of the columns are based solely on the name of the columns itself. In an ideal environment I would get a more accurate definition of each one by asking the person that sent me the file a description of each column, and proceed with the analysis to avoid mistakes and misinterpretations.
 
-\section{Closed Won - Success sales by sales team}
+\section{High Level Sales Analysis}
 
 Under the column \textit{stagename} it is possible to see 8 different values, they are:
 
@@ -67,6 +67,57 @@ To better evaluate this, it was created a \textit{Sales Index}, which can be cal
 \begin{equation}
 	Sales\:Index = \frac{\#\:Closed\:Won}{\#\:Closed\:Won + \#\:Closed\:Lost}
 \end{equation}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=1\textwidth]{fig_02_sales_index}
+	\caption{Sales Index.}
+	\label{fig:fig_02}
+\end{figure}
+
+From figure \textcolor{blue}{\ref{fig:fig_02}} it is possible to see that some teams have a high value or even a perfect score. However, those teams have a low number of sales, therefore there is a high chance that when they start to grown their sales number, the \textit{Sales Index} will drop. At the same time, the top team is \textit{Strategic Sales}, with a total of 266 sales and a great 66\% Sales Index, or success rate.
+
+With that said, we can explore which are the top 5 products of each team.
+
+\subsection{Most sold products by Sales Team}
+
+The pie charts shown in figures \textcolor{blue}{\ref{fig:fig_03a}}, \textcolor{blue}{\ref{fig:fig_03b}}, and \textcolor{blue}{\ref{fig:fig_03c}} show which products are more relevant to each of the top 3 teams (Strategic Sales, HVS 1, and HVS 3). The \textit{Other Products} are the ones that are not in the top 5, however, it is important to keep them in the visualization so we can see their impact in each team.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.70\textwidth]{fig_03_strategic_sales}
+	\caption{Products sold by Strategic Sales}
+	\label{fig:fig_03a}
+\end{figure}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.70\textwidth]{fig_03_hvs_1}
+	\caption{Products sold by HVS 1}
+	\label{fig:fig_03b}
+\end{figure}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.80\textwidth]{fig_03_hvs_3}
+	\caption{Products sold by HVS 3}
+	\label{fig:fig_03c}
+\end{figure}
+
+\newpage
+\section{Strategic Sales Team}
+
+In this section the Strategic Sales Team will be better analyzed, so we can understand who are the owners of the opportunities and how many sales they did. 
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.70\textwidth]{fig_04_sellers}
+	\caption{Products sold by HVS 3}
+	\label{fig:fig_04}
+\end{figure}
+
+In figure \ref{fig:fig_04} it is shown the total Closed Won and Closed Lost sales by each of the sellers in the Strategic Sales team, most of them present a good Sales Index. However the seller \textit{0054v00000E7EDFAA3} seems to lose more customers than win new ones. 
+
 
 \chapter{SQL query}
 
