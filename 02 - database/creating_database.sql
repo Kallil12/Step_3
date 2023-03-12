@@ -5,45 +5,80 @@ CREATE DATABASE vention_database
     CONNECTION LIMIT = -1
     IS_TEMPLATE = False;
 
---------------------------------------------
+----------------------------------------------------------------------------------------
 
--- Create the orders table
+DROP TABLE users, partner_feature, orders, order_partner_line_items, order_line_items;
+TRUNCATE users, partner_feature, orders, order_partner_line_items, order_line_items;
+
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    email VARCHAR(255) NOT NULL
+);
+
+-- insert 30 random users
+INSERT INTO users (email)
+SELECT 'user' || generate_series(1, 30) || '@example.com'
+FROM generate_series(1, 30);
+
+----------------------------------------------------------------------------------------
+
+-- create the partner_feature table
+CREATE TABLE partner_feature (
+    id SERIAL PRIMARY KEY,
+    contract_rate NUMERIC(10, 2) NOT NULL
+);
+
+-- insert 30 random partner features
+INSERT INTO partner_feature (contract_rate)
+SELECT (random() * 100)::numeric(10,2)
+FROM generate_series(1, 30);
+
+----------------------------------------------------------------------------------------
+
+-- create the orders table
 CREATE TABLE orders (
-    id INTEGER PRIMARY KEY,
-    created_at TIMESTAMP,
-    user_id INTEGER,
+    id SERIAL PRIMARY KEY,
+    created_at TIMESTAMP NOT NULL,
+    user_id INTEGER NOT NULL,
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
--- Create the order_line_items table
+-- insert 30 random orders
+INSERT INTO orders (created_at, user_id)
+SELECT 
+    CURRENT_TIMESTAMP - INTERVAL '1 day' * (30 - generate_series(1, 30)),
+    (random() * 30 + 1)::integer
+FROM generate_series(1, 30);
+
+----------------------------------------------------------------------------------------
+
 CREATE TABLE order_line_items (
-    order_id INTEGER,
-    part_number TEXT,
-    item_price DECIMAL(10, 2),
-    item_cost DECIMAL(10, 2),
-    quantity INTEGER,
+    order_id INTEGER NOT NULL,
+    part_number VARCHAR(255) NOT NULL,
+    item_price NUMERIC(10, 2) NOT NULL,
+    item_cost NUMERIC(10, 2) NOT NULL,
+    quantity INTEGER NOT NULL,
     FOREIGN KEY (order_id) REFERENCES orders(id)
 );
 
--- Create the order_partner_line_items table
+-- insert 30 random order line items for each order
+INSERT INTO order_line_items (order_id, part_number, item_price, item_cost, quantity)
+SELECT 
+    o.id,
+    'part' || generate_series(1, 30),
+    (random() * 100)::numeric(10,2),
+    (random() * 50)::numeric(10,2),
+    (random() * 5 + 1)::integer
+FROM orders o
+CROSS JOIN generate_series(1, 30);
+
+----------------------------------------------------------------------------------------
+
 CREATE TABLE order_partner_line_items (
-    order_id INTEGER,
-    part_number TEXT,
-    partner_id INTEGER,
-    item_price DECIMAL(10, 2),
-    quantity INTEGER,
-    FOREIGN KEY (order_id) REFERENCES orders(id),
-    FOREIGN KEY (partner_id) REFERENCES partner_feature(id)
-);
-
--- Create the partner_feature table
-CREATE TABLE partner_feature (
-    id INTEGER PRIMARY KEY,
-    contract_rate DECIMAL(10, 2)
-);
-
--- Create the users table
-CREATE TABLE users (
-    id INTEGER PRIMARY KEY,
-    email TEXT
+    order_id INTEGER NOT NULL,
+    part_number VARCHAR(255) NOT NULL,
+    partner_id INTEGER NOT NULL,
+    item_price NUMERIC(10, 2) NOT NULL,
+    quantity INTEGER NOT NULL,
+    FOREIGN KEY (order_id) REFERENCES orders(id)
 );

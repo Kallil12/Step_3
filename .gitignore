@@ -1,6 +1,6 @@
 *Vention - Technical test - BI analyst.pdf
-*aux
-*log
-*out
-*synctex.gz
-*toc
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.toc
