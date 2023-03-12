@@ -22,10 +22,11 @@ FROM generate_series(1, 30);
 
 ----------------------------------------------------------------------------------------
 
--- create the partner_feature table
+-- create the partner_feature table FOREIGN KEY (order_id) REFERENCES orders(id)
 CREATE TABLE partner_feature (
     id SERIAL PRIMARY KEY,
-    contract_rate NUMERIC(10, 2) NOT NULL
+    contract_rate NUMERIC(10, 2) NOT NULL,
+	FOREIGN KEY (id) REFERENCES order_partner_line_items(partner_id)
 );
 
 -- insert 30 random partner features
@@ -82,3 +83,8 @@ CREATE TABLE order_partner_line_items (
     quantity INTEGER NOT NULL,
     FOREIGN KEY (order_id) REFERENCES orders(id)
 );
+
+----------------------------------------------------------------------------------------
+
+ALTER TABLE order_partner_line_items
+ADD CONSTRAINT constraint_name UNIQUE (column_name);
