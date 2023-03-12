@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.10)  11 MAR 2023 18:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.10)  11 MAR 2023 18:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -425,8 +425,14 @@ Chapter 3.
 [11
 
 ] (vention_report_Kallil.aux)
-Package rerunfilecheck Info: File `vention_report_Kallil.out' has not changed.
-(rerunfilecheck)             Checksum: A5187E1A14E91A8B41E750372377C9FC;1078.
+
+Package rerunfilecheck Warning: File `vention_report_Kallil.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `vention_report_Kallil.out':
+(rerunfilecheck)             Before: A5187E1A14E91A8B41E750372377C9FC;1078
+(rerunfilecheck)             After:  518D8E07C19DD76DFD250805E3F94304;996.
  ) 
 Here is how much of TeX's memory you used:
  10153 strings out of 476374
@@ -436,17 +442,21 @@ Here is how much of TeX's memory you used:
  518435 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,6n,77p,596b,496s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Alphabyte\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
-tcrm1000.pk><C:/Users/Alphabyte/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmbx10.pfb><C:/Users/Alphabyte/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Alphabyte/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Alphabyte/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Alphab
-yte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/
-Users/Alphabyte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-r17.pfb><C:/Users/Alphabyte/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmti10.pfb>
-Output written on vention_report_Kallil.pdf (12 pages, 248940 bytes).
+
+pdfTeX warning (dest): name{section.1.4} has been referenced but does not exist
+, replaced by a fixed one
+
+ <C:\Users\Alphabyte\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tc
+rm1000.pk><C:/Users/Alphabyte/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmbx10.pfb><C:/Users/Alphabyte/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Alphabyte/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Alphabyte/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Alphabyt
+e/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Us
+ers/Alphabyte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
+7.pfb><C:/Users/Alphabyte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmti10.pfb>
+Output written on vention_report_Kallil.pdf (12 pages, 248733 bytes).
 PDF statistics:
  185 PDF objects out of 1000 (max. 8388607)
  32 named destinations out of 1000 (max. 500000)
