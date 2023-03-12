@@ -3,11 +3,16 @@
 \usepackage{xcolor}
 \usepackage{graphicx}
 \usepackage{subcaption}
+\usepackage{listings}
 
+\lstnewenvironment{sql}
+{\lstset{language=SQL,basicstyle=\ttfamily}}
+{}
 
 %\usepackage[margin=2cm,footskip=0.25in]{geometry}
 
 \renewcommand{\thefigure}{\arabic{figure}}
+\renewcommand{\thetable}{\arabic{table}}
 \setlength{\parskip}{6pt}
 % Title Page
 \title{Vention Data Analysis Report}
@@ -152,7 +157,7 @@ As we can see, the number of costumers that the seller \textit{0054v00000E7EDFAA
 
 \section{HVS 1}
 
-Now we will execute the same analysis with the team HSV 1. Which gives the results from figure \ref{fig:fig_06}.
+Now we will execute the same analysis with the team HSV 1. Which gives the results from figure \textcolor{blue}{\ref{fig:fig_06}}.
 
 \begin{figure}[htb]
 	\centering
@@ -175,6 +180,73 @@ The amount of customers that each seller is managing in HVS 1 is higher, therefo
 %\section{HVS 3}
 
 \chapter{SQL query}
+
+This chapter will be dedicated to discuss the implementation and query to solve the second task.
+
+\section{Database creation}
+
+To complete this task it was necessary to understand how the tables were related, so a version of what is presented in the task was implemented. The Entity Relation Diagram (ERD) can be seen in figure \textcolor{blue}{\ref{fig:fig_08}}.
+
+This diagram was created using the \textit{PGAdmin} tool \textit{ERD for Database}. Moreover, fake data was used to populate the database. Users and products are related to the \textit{Star Wars} universe, and as this database was created only for test purposes, there isn't a high amount of data on it. Some users have a email that ends in \textit{@vention.cc} to add a condition that should be met, according to the Technical Test.
+
+At first the implementation tried to follow a star schema, but the way that the data is related is closer to a snowflake schema. Therefore, a new data model would be needed to use a star schema and the end result would be very different from what was shown.
+
+The query can be seen in table \textcolor{blue}{\ref{tbl:sql_query}} in addition to that, images \textcolor{blue}{\ref{fig:fig_08}} and \textcolor{blue}{\ref{fig:fig_09}}
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{l}
+		\hline
+		\textbf{SQL Query} \\
+		\hline
+		\begin{minipage}[t]{0.9\textwidth}
+			\begin{verbatim}
+				SELECT date_trunc('month', o.created_at) AS order_month,
+				 COUNT(DISTINCT o.id) AS count_orders,
+				 SUM(CASE
+				  WHEN opli.partner_id IS NULL THEN oli.item_price * oli.quantity
+				  ELSE opli.item_price * pf.contract_rate * opli.quantity
+				 END) AS total_gross_sales,
+				 SUM(CASE
+				  WHEN opli.partner_id IS NULL THEN oli.item_cost * oli.quantity
+				  ELSE opli.item_price * opli.quantity
+				 END) AS total_net_sales,
+				 array_agg(o.id) AS list_order
+				FROM orders o
+				JOIN order_line_items oli ON o.id = oli.order_id
+				LEFT JOIN order_partner_line_items opli 
+				  ON o.id = opli.order_id AND oli.part_number = opli.part_number
+				LEFT JOIN partner_feature pf 
+				  ON opli.partner_id = pf.id
+				JOIN users u ON o.user_id = u.id
+				WHERE u.email NOT LIKE '%@vention.cc'
+				AND o.created_at >= '2021-01-01'
+				GROUP BY order_month
+				ORDER BY order_month;
+			\end{verbatim}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{Final Query - Exercise 02}
+	\label{tbl:sql_query}
+\end{table}
+
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=1.1\textwidth]{01_data_modeling_resize}
+	\caption{ERD of the implemented database}
+	\label{fig:fig_08}
+\end{figure}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=1.3\textwidth]{02_result_01}
+	\caption{Query result}
+	\label{fig:fig_09}
+\end{figure}
+
+
 
 \chapter{Technical details}
 
