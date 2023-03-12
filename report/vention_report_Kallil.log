@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.10)  11 MAR 2023 18:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.10)  11 MAR 2023 19:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -350,34 +350,34 @@ Chapter 1.
 [2
 
 ]
-<fig_01_closed_won.png, id=63, 894.34125pt x 693.59125pt>
+<fig_01_closed_won.png, id=58, 894.34125pt x 693.59125pt>
 File: fig_01_closed_won.png Graphic file (type png)
 <use fig_01_closed_won.png>
 Package pdftex.def Info: fig_01_closed_won.png  used on input line 60.
 (pdftex.def)             Requested size: 345.0pt x 267.55733pt.
  [3 <./fig_01_closed_won.png>]
-<fig_02_sales_index.png, id=72, 700.6175pt x 606.265pt>
+<fig_02_sales_index.png, id=67, 700.6175pt x 606.265pt>
 File: fig_02_sales_index.png Graphic file (type png)
 <use fig_02_sales_index.png>
 Package pdftex.def Info: fig_02_sales_index.png  used on input line 77.
 (pdftex.def)             Requested size: 345.0pt x 298.54333pt.
  [4 <./fig_02_sales_index.png>]
-<fig_02_a_days_to_win.png, id=83, 235.63031pt x 161.85469pt>
+<fig_02_a_days_to_win.png, id=78, 235.63031pt x 161.85469pt>
 File: fig_02_a_days_to_win.png Graphic file (type png)
 <use fig_02_a_days_to_win.png>
 Package pdftex.def Info: fig_02_a_days_to_win.png  used on input line 90.
 (pdftex.def)             Requested size: 189.75105pt x 130.3409pt.
-<fig_03_strategic_sales.png, id=87, 374.39874pt x 247.92625pt>
+<fig_03_strategic_sales.png, id=82, 374.39874pt x 247.92625pt>
 File: fig_03_strategic_sales.png Graphic file (type png)
 <use fig_03_strategic_sales.png>
 Package pdftex.def Info: fig_03_strategic_sales.png  used on input line 108.
 (pdftex.def)             Requested size: 293.2521pt x 194.2026pt.
-<fig_03_hvs_1.png, id=88, 371.3875pt x 247.92625pt>
+<fig_03_hvs_1.png, id=83, 371.3875pt x 247.92625pt>
 File: fig_03_hvs_1.png Graphic file (type png)
 <use fig_03_hvs_1.png>
 Package pdftex.def Info: fig_03_hvs_1.png  used on input line 115.
 (pdftex.def)             Requested size: 293.2521pt x 195.7688pt.
-<fig_03_hvs_3.png, id=89, 444.66125pt x 247.92625pt>
+<fig_03_hvs_3.png, id=84, 444.66125pt x 247.92625pt>
 File: fig_03_hvs_3.png Graphic file (type png)
 <use fig_03_hvs_3.png>
 Package pdftex.def Info: fig_03_hvs_3.png  used on input line 122.
@@ -385,12 +385,12 @@ Package pdftex.def Info: fig_03_hvs_3.png  used on input line 122.
  [5 <./fig_02_a_days_to_win.png>] [6 <./fig_03_strategic_sales.png> <./fig_03_h
 vs_1.png>]
 [7 <./fig_03_hvs_3.png>]
-<fig_04_sellers.png, id=111, 347.79938pt x 140.02313pt>
+<fig_04_sellers.png, id=106, 347.79938pt x 140.02313pt>
 File: fig_04_sellers.png Graphic file (type png)
 <use fig_04_sellers.png>
 Package pdftex.def Info: fig_04_sellers.png  used on input line 135.
 (pdftex.def)             Requested size: 241.49895pt x 97.22711pt.
-<fig_05_customer_and_sellers.png, id=114, 186.6975pt x 137.7647pt>
+<fig_05_customer_and_sellers.png, id=109, 186.6975pt x 137.7647pt>
 File: fig_05_customer_and_sellers.png Graphic file (type png)
 <use fig_05_customer_and_sellers.png>
 Package pdftex.def Info: fig_05_customer_and_sellers.png  used on input line 14
@@ -402,7 +402,7 @@ Overfull \hbox (3.44965pt too wide) in paragraph at lines 151--152
 /cmr/m/it/10 0054v00000E7EDFAA3
  []
 
-<fig_06_sellers_hs1.png, id=116, 344.03531pt x 176.91093pt>
+<fig_06_sellers_hs1.png, id=111, 344.03531pt x 176.91093pt>
 File: fig_06_sellers_hs1.png Graphic file (type png)
 <use fig_06_sellers_hs1.png>
 Package pdftex.def Info: fig_06_sellers_hs1.png  used on input line 159.
@@ -410,7 +410,7 @@ Package pdftex.def Info: fig_06_sellers_hs1.png  used on input line 159.
 [8
 
  <./fig_04_sellers.png> <./fig_05_customer_and_sellers.png>]
-<fig_06_customers_and_sellers_hs1.png, id=125, 185.19188pt x 191.21437pt>
+<fig_06_customers_and_sellers_hs1.png, id=120, 185.19188pt x 191.21437pt>
 File: fig_06_customers_and_sellers_hs1.png Graphic file (type png)
 <use fig_06_customers_and_sellers_hs1.png>
 Package pdftex.def Info: fig_06_customers_and_sellers_hs1.png  used on input li
@@ -425,40 +425,30 @@ Chapter 3.
 [11
 
 ] (vention_report_Kallil.aux)
-
-Package rerunfilecheck Warning: File `vention_report_Kallil.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `vention_report_Kallil.out':
-(rerunfilecheck)             Before: A5187E1A14E91A8B41E750372377C9FC;1078
-(rerunfilecheck)             After:  518D8E07C19DD76DFD250805E3F94304;996.
+Package rerunfilecheck Info: File `vention_report_Kallil.out' has not changed.
+(rerunfilecheck)             Checksum: 518D8E07C19DD76DFD250805E3F94304;996.
  ) 
 Here is how much of TeX's memory you used:
- 10153 strings out of 476374
- 168607 string characters out of 5786966
+ 10151 strings out of 476374
+ 168583 string characters out of 5786966
  1856340 words of memory out of 5000000
- 30416 multiletter control sequences out of 15000+600000
+ 30415 multiletter control sequences out of 15000+600000
  518435 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,6n,77p,596b,496s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{section.1.4} has been referenced but does not exist
-, replaced by a fixed one
-
- <C:\Users\Alphabyte\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tc
-rm1000.pk><C:/Users/Alphabyte/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmbx10.pfb><C:/Users/Alphabyte/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Alphabyte/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Alphabyte/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Alphabyt
-e/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Us
-ers/Alphabyte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
-7.pfb><C:/Users/Alphabyte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmti10.pfb>
-Output written on vention_report_Kallil.pdf (12 pages, 248733 bytes).
+ <C:\Users\Alphabyte\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
+tcrm1000.pk><C:/Users/Alphabyte/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmbx10.pfb><C:/Users/Alphabyte/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Alphabyte/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Alphabyte/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Alphab
+yte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/
+Users/Alphabyte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+r17.pfb><C:/Users/Alphabyte/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmti10.pfb>
+Output written on vention_report_Kallil.pdf (12 pages, 248206 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
- 115 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 180 PDF objects out of 1000 (max. 8388607)
+ 31 named destinations out of 1000 (max. 500000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
