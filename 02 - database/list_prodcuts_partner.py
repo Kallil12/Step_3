@@ -12,3 +12,4 @@ for i in range(50):
     values.append((value, part, cost, price, quantity))
     
 print(values)
+INTEGER NOT NULL
