@@ -10,6 +10,5 @@ for i in range(50):
     price = random.randint(15, 150)
     quantity = random.randint(1, 10)
     values.append((value, part, cost, price, quantity))
-    
+
 print(values)
-INTEGER NOT NULL

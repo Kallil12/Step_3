@@ -15,10 +15,6 @@ CREATE TABLE users (
     email VARCHAR(255) NOT NULL
 );
 
--- insert 30 random users
-INSERT INTO users (email)
-SELECT 'user' || generate_series(1, 30) || '@example.com'
-FROM generate_series(1, 30);
 
 ----------------------------------------------------------------------------------------
 
@@ -29,10 +25,6 @@ CREATE TABLE partner_feature (
 	FOREIGN KEY (id) REFERENCES order_partner_line_items(partner_id)
 );
 
--- insert 30 random partner features
-INSERT INTO partner_feature (contract_rate)
-SELECT (random() * 100)::numeric(10,2)
-FROM generate_series(1, 30);
 
 ----------------------------------------------------------------------------------------
 
@@ -44,12 +36,6 @@ CREATE TABLE orders (
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
--- insert 30 random orders
-INSERT INTO orders (created_at, user_id)
-SELECT 
-    CURRENT_TIMESTAMP - INTERVAL '1 day' * (30 - generate_series(1, 30)),
-    (random() * 30 + 1)::integer
-FROM generate_series(1, 30);
 
 ----------------------------------------------------------------------------------------
 
@@ -62,16 +48,7 @@ CREATE TABLE order_line_items (
     FOREIGN KEY (order_id) REFERENCES orders(id)
 );
 
--- insert 30 random order line items for each order
-INSERT INTO order_line_items (order_id, part_number, item_price, item_cost, quantity)
-SELECT 
-    o.id,
-    'part' || generate_series(1, 30),
-    (random() * 100)::numeric(10,2),
-    (random() * 50)::numeric(10,2),
-    (random() * 5 + 1)::integer
-FROM orders o
-CROSS JOIN generate_series(1, 30);
+
 
 ----------------------------------------------------------------------------------------
 
