@@ -8,7 +8,6 @@ gets closer to 1, it doesn't mean that the team is necessarily doing
 bad if their ratio is lower than another, because it could be a team
 that makes a high number of contact, so naturally it will have some
 losses in the way, but it is good to be closer to 1.
-
 '''
 
 #import pandas as pd

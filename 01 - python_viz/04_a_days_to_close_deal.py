@@ -16,9 +16,5 @@ df_closed_won['days_to_close'] = (df_closed_won['closedate'] - df_closed_won['op
 df_mean_days_to_close = df_closed_won.groupby('sales_team__c')['days_to_close'].mean().reset_index()
 df_mean_days_to_close = df_mean_days_to_close.sort_values('days_to_close')
 
-
-# Sort the groups in ascending order of the mean values and get the top 3 teams
-#df_top_3_teams = df_mean_days_to_close.sort_values('days_to_close').head(3)
-
 # Print the results
 print(df_mean_days_to_close)

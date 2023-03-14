@@ -24,5 +24,4 @@ pivoted_data['sales_index'] = pivoted_data['Closed Won'] / (pivoted_data['Closed
 sorted_pivoted_data = pivoted_data.sort_values('Total', ascending=False)
 
 # Print the sorted pivoted data
-
 print(sorted_pivoted_data[['Closed Won', 'Closed Lost', 'sales_index']])

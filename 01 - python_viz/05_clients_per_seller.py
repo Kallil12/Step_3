@@ -10,18 +10,6 @@ strategic_sales_data = df[df['sales_team__c'] == 'Strategic Sales']
 ownerid_count = strategic_sales_data.groupby('ownerid')['accountid'].nunique()
 ownerid_cout = ownerid_count.sort_values()
 
-'''
-s.plot(kind='bar')
-
-# add axis labels and a title
-plt.xlabel('Fruit')
-plt.ylabel('Quantity')
-plt.title('Fruit Quantities')
-
-# show the plot
-plt.show()
-'''
-
 ownerid_count.plot(kind = 'bar')
 
 print(ownerid_count)
